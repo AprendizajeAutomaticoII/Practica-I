@@ -1,0 +1,7 @@
+dataset/
+marquise/
+datos/
+datos_marquise/
+*.pth
+__pycache__/
+.ipynb_checkpoints/
