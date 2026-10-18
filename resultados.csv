@@ -22,3 +22,5 @@ T05,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(32, 64, 128); neuronas_fc=
 T06,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,8,0.0129,0.0064,0.9971,0.998,,3269.7
 T07,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,7,0.0089,0.0068,0.9979,0.9983,,1274.0
 T08,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",7,4,0.0243,0.0101,0.9942,0.9966,,2286.4
+Marquise-C8-sin-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",16,11,0.0194,0.0101,0.9956,0.9972,,2265.9
+Marquise-C8-con-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=True",15,10,0.0262,0.0143,0.9943,0.9972,,2036.6
