@@ -33,7 +33,7 @@ Clasificador CNN en PyTorch de 7 tallas de diamante (cushion, emerald, heart, ov
 | `5-transfer-learning.ipynb` | Daniel | ResNet18 y MobileNetV2 preentrenadas |
 | `6-tuning-automatico.ipynb` | Amado | Búsqueda automática de hiperparámetros |
 | `7-marquise.ipynb` | Daniel | Experimento con la clase marquise |
-| `resultados.csv` | Automático | Una fila por cada entrenamiento |
+| `resultados.csv` | Automático | Una fila por cada entrenamiento, con el dispositivo en el que se ejecutó (GPU o CPU) |
 | `graficas/` | Automático | Curvas y matrices de confusión |
 
 ## Uso de `utilidades.py`

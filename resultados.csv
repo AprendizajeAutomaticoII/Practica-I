@@ -1,26 +1,26 @@
-configuracion,hiperparametros,epocas_entrenadas,mejor_epoca,perdida_train,perdida_val,acc_train,acc_val,acc_test,tiempo_segundos
-C1,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",8,3,0.0303,0.0132,0.9922,0.9955,,167.6
-C2,"tam_imagen=128; tam_lote=32; lr=0.0001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",12,7,0.004,0.0091,0.9989,0.998,,253.3
-C3,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",8,3,0.026,0.009,0.9936,0.9975,,173.2
-C4,"tam_imagen=96; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",12,7,0.0117,0.0103,0.9975,0.998,,400.2
-TL-ResNet18-congelada,tam_imagen=224; tam_lote=32; lr=0.001; capas_entrenadas=fc,20,15,0.0115,0.0116,0.997,0.998,,787.8
-TL-ResNet18-ajuste-fino,tam_imagen=224; tam_lote=32; lr=0.0001; capas_entrenadas=todas,11,6,0.0047,0.0044,0.9989,0.9997,,640.7
-TL-MobileNetV2-ajuste-fino,tam_imagen=224; tam_lote=32; lr=0.0001; capas_entrenadas=todas,8,3,0.0059,0.0049,0.9989,0.9992,,551.3
-Marquise-sin-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",11,6,0.0164,0.0125,0.9962,0.9978,,212.2
-Marquise-con-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=True",11,6,0.0201,0.0151,0.9946,0.9975,,221.9
-C5,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(32, 64, 128, 256); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",13,8,0.024,0.0089,0.9936,0.9978,,5015.1
-C6,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=ReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",15,10,0.032,0.0085,0.9908,0.9983,,2073.6
-C7,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,5,0.0181,0.0089,0.996,0.9983,,1245.7
-C8,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",17,12,0.015,0.0067,0.9969,0.9983,,2818.1
-Final-C8,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",17,12,0.015,0.0067,0.9969,0.9983,,2406.5
-DA-C8,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=True; pesos_clase=False",11,6,0.0427,0.0078,0.9918,0.9972,,1785.2
-T01,"tam_imagen=128; tam_lote=128; lr=0.0001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",9,6,0.0067,0.0085,0.9986,0.9983,,1600.1
-T02,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",10,10,0.0326,0.0098,0.9939,0.9972,,3939.6
-T03,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",8,5,0.0415,0.0092,0.9898,0.998,,1022.8
-T04,"tam_imagen=128; tam_lote=64; lr=0.0005; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",5,2,0.0373,0.011,0.9911,0.9972,,642.3
-T05,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",10,8,0.0347,0.0088,0.9922,0.998,,3323.7
-T06,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,8,0.0129,0.0064,0.9971,0.998,,3269.7
-T07,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,7,0.0089,0.0068,0.9979,0.9983,,1274.0
-T08,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",7,4,0.0243,0.0101,0.9942,0.9966,,2286.4
-Marquise-C8-sin-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",16,11,0.0194,0.0101,0.9956,0.9972,,2265.9
-Marquise-C8-con-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=True",15,10,0.0262,0.0143,0.9943,0.9972,,2036.6
+configuracion,hiperparametros,epocas_entrenadas,mejor_epoca,perdida_train,perdida_val,acc_train,acc_val,acc_test,tiempo_segundos,dispositivo
+C1,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",8,3,0.0303,0.0132,0.9922,0.9955,,167.6,GPU
+C2,"tam_imagen=128; tam_lote=32; lr=0.0001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",12,7,0.004,0.0091,0.9989,0.998,,253.3,GPU
+C3,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",8,3,0.026,0.009,0.9936,0.9975,,173.2,GPU
+C4,"tam_imagen=96; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",12,7,0.0117,0.0103,0.9975,0.998,,400.2,GPU
+TL-ResNet18-congelada,tam_imagen=224; tam_lote=32; lr=0.001; capas_entrenadas=fc,20,15,0.0115,0.0116,0.997,0.998,,787.8,GPU
+TL-ResNet18-ajuste-fino,tam_imagen=224; tam_lote=32; lr=0.0001; capas_entrenadas=todas,11,6,0.0047,0.0044,0.9989,0.9997,,640.7,GPU
+TL-MobileNetV2-ajuste-fino,tam_imagen=224; tam_lote=32; lr=0.0001; capas_entrenadas=todas,8,3,0.0059,0.0049,0.9989,0.9992,,551.3,GPU
+Marquise-sin-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",11,6,0.0164,0.0125,0.9962,0.9978,,212.2,GPU
+Marquise-con-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=True",11,6,0.0201,0.0151,0.9946,0.9975,,221.9,GPU
+C5,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(32, 64, 128, 256); neuronas_fc=(128,); activacion=ReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",13,8,0.024,0.0089,0.9936,0.9978,,5015.1,CPU
+C6,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=ReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",15,10,0.032,0.0085,0.9908,0.9983,,2073.6,CPU
+C7,"tam_imagen=128; tam_lote=32; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,5,0.0181,0.0089,0.996,0.9983,,1245.7,CPU
+C8,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",17,12,0.015,0.0067,0.9969,0.9983,,2818.1,CPU
+Final-C8,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",17,12,0.015,0.0067,0.9969,0.9983,,2406.5,CPU
+DA-C8,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=True; pesos_clase=False",11,6,0.0427,0.0078,0.9918,0.9972,,1785.2,CPU
+T01,"tam_imagen=128; tam_lote=128; lr=0.0001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",9,6,0.0067,0.0085,0.9986,0.9983,,1600.1,CPU
+T02,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",10,10,0.0326,0.0098,0.9939,0.9972,,3939.6,CPU
+T03,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",8,5,0.0415,0.0092,0.9898,0.998,,1022.8,CPU
+T04,"tam_imagen=128; tam_lote=64; lr=0.0005; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",5,2,0.0373,0.011,0.9911,0.9972,,642.3,CPU
+T05,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",10,8,0.0347,0.0088,0.9922,0.998,,3323.7,CPU
+T06,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,8,0.0129,0.0064,0.9971,0.998,,3269.7,CPU
+T07,"tam_imagen=128; tam_lote=128; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(128,); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",10,7,0.0089,0.0068,0.9979,0.9983,,1274.0,CPU
+T08,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(32, 64, 128); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.25; aumentado=False; pesos_clase=False",7,4,0.0243,0.0101,0.9942,0.9966,,2286.4,CPU
+Marquise-C8-sin-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=False",16,11,0.0194,0.0101,0.9956,0.9972,,2265.9,CPU
+Marquise-C8-con-pesos,"tam_imagen=128; tam_lote=64; lr=0.001; filtros=(16, 32, 64); neuronas_fc=(256, 128); activacion=LeakyReLU; p_dropout=0.5; aumentado=False; pesos_clase=True",15,10,0.0262,0.0143,0.9943,0.9972,,2036.6,CPU
