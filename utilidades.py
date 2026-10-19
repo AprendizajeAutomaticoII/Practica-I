@@ -228,6 +228,21 @@ def guardar_resultado(nombre_config, hiperparametros, historial, ruta_csv='resul
         escritor.writerow(fila)
 
 
+def guardar_acc_test(nombre_config, acc_test, ruta_csv='resultados.csv'):
+    with open(ruta_csv, encoding='utf-8', newline='') as fichero:
+        filas = list(csv.DictReader(fichero))
+
+    for fila in reversed(filas):
+        if fila['configuracion'] == nombre_config:
+            fila['acc_test'] = round(acc_test, 4)
+            break
+
+    with open(ruta_csv, 'w', newline='', encoding='utf-8') as fichero:
+        escritor = csv.DictWriter(fichero, fieldnames=filas[0].keys())
+        escritor.writeheader()
+        escritor.writerows(filas)
+
+
 def dibujar_curvas(historial, titulo, ruta_guardado=None):
     epocas_eje = range(1, len(historial['perdida_train']) + 1)
 
