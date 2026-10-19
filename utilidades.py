@@ -217,6 +217,7 @@ def guardar_resultado(nombre_config, hiperparametros, historial, ruta_csv='resul
         'acc_val': round(historial['acc_val'][mejor], 4),
         'acc_test': '' if acc_test is None else round(acc_test, 4),
         'tiempo_segundos': round(historial['tiempo'], 1),
+        'dispositivo': 'GPU' if device == 'cuda' else 'CPU',
     }
 
     existe = os.path.exists(ruta_csv)
