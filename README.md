@@ -6,7 +6,9 @@ Clasificador CNN en PyTorch de 7 tallas de diamante (cushion, emerald, heart, ov
 
 ## Puesta en marcha
 
-1. Clonar el repositorio y descargar el dataset de Kaggle ([Diamond Images Dataset](https://www.kaggle.com/datasets/aayushpurswani/diamond-images-dataset)) dentro, de forma que quede `Practica-I/dataset/<clase>/` y `Practica-I/marquise/`.
+1. Clonar el repositorio, descargar `dataset_diamantes.zip` desde [Google Drive](https://drive.google.com/file/d/13ru71PkGclMPjm0HkTU8vEyTWvsy4Oy8/view?usp=drive_link) y descomprimirlo dentro, de forma que quede `Practica-I/dataset/<clase>/` y `Practica-I/marquise/`.
+
+   Es el [Diamond Images Dataset](https://www.kaggle.com/datasets/aayushpurswani/diamond-images-dataset) de Kaggle ya limpio y balanceado: se eliminó una imagen corrupta de emerald y se dejaron 3391 imágenes por clase eliminando al azar las sobrantes (marquise se mantiene con sus 465). La descarga directa de Kaggle no sirve para reproducir los resultados, porque tiene todas las imágenes originales. `imagenes_usadas.csv` lista cada imagen usada con su clase y su conjunto (training, validation o test).
 2. Instalar las librerías en el entorno virtual:
    ```
    python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
@@ -38,6 +40,7 @@ Volver a entrenar da pesos ligeramente distintos (CPU y GPU no calculan exactame
 | `6-tuning-automatico.ipynb` | Amado | Búsqueda automática de hiperparámetros |
 | `7-marquise.ipynb` | Daniel | Experimento con la clase marquise |
 | `8-evaluar-modelos-guardados.ipynb` | Daniel | Evaluación en test de los pesos guardados, sin reentrenar |
+| `imagenes_usadas.csv` | Automático | Las 24.202 imágenes usadas, con su clase y su conjunto |
 | `resultados.csv` | Automático | Una fila por cada entrenamiento, con el dispositivo en el que se ejecutó (GPU o CPU). `acc_test` solo está en los modelos evaluados en test |
 | `graficas/` | Automático | Curvas y matrices de confusión |
 
