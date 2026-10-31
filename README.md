@@ -1,12 +1,14 @@
 # Practica-I – Clasificación de tallas de diamante con redes convolucionales
 
-Aprendizaje Automático II 2026-27 · Daniel y Amado
+Aprendizaje Automático II 2026-27 · Amado Artiles Rodríguez y Daniel Perdomo Medina
 
 Clasificador CNN en PyTorch de 7 tallas de diamante (cushion, emerald, heart, oval, pear, princess, round), con 3391 imágenes por clase. La clase marquise (465 imágenes) se usa aparte para estudiar el efecto de tener menos imágenes.
 
 ## Puesta en marcha
 
-1. Clonar el repositorio y descomprimir el zip del dataset dentro, de forma que quede `Practica-I/dataset/<clase>/` y `Practica-I/marquise/`.
+1. Clonar el repositorio, descargar `dataset_diamantes.zip` desde [Google Drive](https://drive.google.com/file/d/13ru71PkGclMPjm0HkTU8vEyTWvsy4Oy8/view?usp=drive_link) y descomprimirlo dentro, de forma que quede `Practica-I/dataset/<clase>/` y `Practica-I/marquise/`.
+
+   Es el [Diamond Images Dataset](https://www.kaggle.com/datasets/aayushpurswani/diamond-images-dataset) de Kaggle ya limpio y balanceado: se eliminó una imagen corrupta de emerald y se dejaron 3391 imágenes por clase eliminando al azar las sobrantes (marquise se mantiene con sus 465). La descarga directa de Kaggle no sirve para reproducir los resultados, porque tiene todas las imágenes originales. `imagenes_usadas.csv` lista cada imagen usada con su clase y su conjunto (training, validation o test).
 2. Instalar las librerías en el entorno virtual:
    ```
    python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
@@ -18,7 +20,11 @@ Clasificador CNN en PyTorch de 7 tallas de diamante (cushion, emerald, heart, ov
    ```
    Crea `datos/training`, `datos/validation` y `datos/test` con 2373 / 508 / 510 imágenes por clase.
 
-`dataset/`, `marquise/`, `datos/`, `datos_marquise/` y `modelos/*.pth` no se suben al repositorio.
+`dataset/`, `marquise/`, `datos/` y `datos_marquise/` no se suben al repositorio. De `modelos/` solo se suben los pesos de los dos modelos evaluados en test: `Final-C8.pth` y `TL-ResNet18-ajuste-fino.pth`.
+
+## Comprobar los resultados sin reentrenar
+
+Volver a entrenar da pesos ligeramente distintos (CPU y GPU no calculan exactamente igual), así que el resultado de test cambiaría un poco. Para comprobar los resultados de la entrega basta con generar la partición (paso 3) y ejecutar `8-evaluar-modelos-guardados.ipynb`, que carga los pesos guardados y los evalúa en test en unos segundos: 99,69 % el modelo final C8 y 99,94 % ResNet18.
 
 ## Archivos
 
@@ -33,6 +39,8 @@ Clasificador CNN en PyTorch de 7 tallas de diamante (cushion, emerald, heart, ov
 | `5-transfer-learning.ipynb` | Daniel | ResNet18 y MobileNetV2 preentrenadas |
 | `6-tuning-automatico.ipynb` | Amado | Búsqueda automática de hiperparámetros |
 | `7-marquise.ipynb` | Daniel | Experimento con la clase marquise |
+| `8-evaluar-modelos-guardados.ipynb` | Daniel | Evaluación en test de los pesos guardados, sin reentrenar |
+| `imagenes_usadas.csv` | Automático | Las 24.202 imágenes usadas, con su clase y su conjunto |
 | `resultados.csv` | Automático | Una fila por cada entrenamiento, con el dispositivo en el que se ejecutó (GPU o CPU). `acc_test` solo está en los modelos evaluados en test |
 | `graficas/` | Automático | Curvas y matrices de confusión |
 

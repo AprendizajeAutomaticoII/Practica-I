@@ -6,4 +6,6 @@ datos_marquise/
 __pycache__/
 .ipynb_checkpoints/
 .venv/
-modelos/
+modelos/*
+!modelos/Final-C8.pth
+!modelos/TL-ResNet18-ajuste-fino.pth
